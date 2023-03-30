@@ -4,7 +4,7 @@
 	<title>Contact Form</title>
 </head>
 <body>
-<form method="post" action="Display.php">
+<form method="post" action="Display.php" >
 <!-- Title -->
 <label for="title">Title <span>*</span></label> 
 <select name="title">
@@ -27,8 +27,8 @@
 <input type="tel" id="Tel_num" name="Tel num" pattern="[0-9]{10}" required><br><br>
 
 <!-- File Upload -->
-<label for="file">File Upload: </label>
-<input type="file" id="file" name="file" accept=".pdf, image/jpeg, image/png" ><br><br>
+<label for="fileToUpload">File Upload: </label>
+<input type="file"name="fileToUpload" accept=".pdf, image/jpeg, image/png" ><br><br>
 <!-- Email -->
 <label for="email">Enter your email: <span>*</span></label>
 <input type="email" id="email" name="email" required><br><br>
@@ -37,7 +37,7 @@
 <textarea id="message" name="message" maxlength="300" ></textarea><br><br>
 
 <!-- Submit Button -->
-<input type="submit" value="submit" id="DOB" name="DOB" >
+<input type="submit" value="submit" name="submit" >
 
 
 </form>
